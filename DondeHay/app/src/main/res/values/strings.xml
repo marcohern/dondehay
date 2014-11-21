@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Donde Hay</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="left_items">
+        <item>Lorem Ipsum</item>
+        <item>Dolor sit amet</item>
+        <item>Sanctum discus</item>
+        <item>Demanicus Tolero</item>
+    </string-array>
+</resources>
