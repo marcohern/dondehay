@@ -8,8 +8,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.rocketteam.dondehay.adapters.DrawerMenuAdapter;
+import com.rocketteam.dondehay.models.DrawerMenuModel;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends Activity {
-    private String[] mLeftTitles;
+    private List<DrawerMenuModel> mLeftModel;
     private DrawerLayout mLeftLayout;
     private ListView mLeftList;
 
@@ -18,11 +24,13 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLeftTitles = getResources().getStringArray(R.array.left_items);
+        mLeftModel = new ArrayList<DrawerMenuModel>();
+        mLeftModel.add(new DrawerMenuModel("Lorem Ipsum","LOREM"));
+
         mLeftLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mLeftList = (ListView) findViewById(R.id.left_drawer);
 
-        mLeftList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mLeftTitles));
+        mLeftList.setAdapter(new DrawerMenuAdapter(this, R.layout.drawer_list_item, mLeftModel));
     }
 
 
