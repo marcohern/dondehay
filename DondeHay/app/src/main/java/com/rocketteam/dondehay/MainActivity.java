@@ -12,6 +12,7 @@ import android.widget.SearchView;
 
 import com.rocketteam.dondehay.adapters.DrawerMenuAdapter;
 import com.rocketteam.dondehay.models.DrawerMenuModel;
+import com.rocketteam.dondehay.models.TestData;
 import com.rocketteam.dondehay.tags.Tags;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class MainActivity extends Activity {
         mLeftList = (ListView) findViewById(R.id.left_drawer);
 
         mLeftList.setAdapter(new DrawerMenuAdapter(this, mLeftModel));
-
+        TestData.init();
     }
 
 
