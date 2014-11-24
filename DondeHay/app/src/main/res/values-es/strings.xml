@@ -6,6 +6,8 @@
     <string name="action_settings">Configuracion</string>
     <string name="icon_menu_item">Icono para Elemento de Menu</string>
     <string name="menu_label">Etiqueta de Menu</string>
+    <string name="search_title">Buscar</string>
+    <string name="search_hint">Buscar</string>
 
     <string-array name="left_items">
         <item>Lorem Ipsum</item>

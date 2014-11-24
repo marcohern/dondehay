@@ -17,17 +17,14 @@ import java.util.List;
  */
 public class DrawerMenuAdapter extends ArrayAdapter<DrawerMenuModel> {
 
-    public DrawerMenuAdapter(Context context, int resource, List<DrawerMenuModel> objects) {
-        super(context, resource, objects);
+    public DrawerMenuAdapter(Context context, List<DrawerMenuModel> objects) {
+        super(context, R.layout.drawer_list_item, objects);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View v = convertView;
-
-        // first check to see if the view is null. if so, we have to inflate it.
-        // to inflate it basically means to render, or show, the view.
         if (v == null) {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v = inflater.inflate(R.layout.drawer_list_item, null);
