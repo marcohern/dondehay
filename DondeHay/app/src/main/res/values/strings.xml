@@ -8,8 +8,9 @@
     <string name="menu_label">Menu Label</string>
     <string name="search_title">Search</string>
     <string name="search_hint">Search</string>
+    <string name="search_description">Places</string>
 
-    <string-array name="left_items">
+    <string-array name="search_suggestions">
         <item>Lorem Ipsum</item>
         <item>Dolor sit amet</item>
         <item>Sanctum discus</item>

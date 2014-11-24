@@ -24,12 +24,14 @@
         <activity android:name=".activities.SearchResultActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
 
-            <meta-data
-                android:name="android.app.searchable"
-                android:resource="@xml/searchable" />
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
         </activity>
+
+        <provider android:name=".providers.PlacesSearchProvider"
+            android:authorities="com.rocketteam.dondehay.providers.PlacesSearchProvider" />
 
     </application>
 

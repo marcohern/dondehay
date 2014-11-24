@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 
@@ -21,7 +19,6 @@ import java.util.List;
 
 public class MainActivity extends Activity {
     private List<DrawerMenuModel> mLeftModel;
-    private DrawerLayout mLeftLayout;
     private ListView mLeftList;
 
     @Override
@@ -32,8 +29,6 @@ public class MainActivity extends Activity {
 
         mLeftModel = new ArrayList<DrawerMenuModel>();
         mLeftModel.add(new DrawerMenuModel("Lorem Ipsum","LOREM"));
-
-        mLeftLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mLeftList = (ListView) findViewById(R.id.left_drawer);
 
         mLeftList.setAdapter(new DrawerMenuAdapter(this, mLeftModel));

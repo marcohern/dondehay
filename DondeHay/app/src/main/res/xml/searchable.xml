@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <searchable xmlns:android="http://schemas.android.com/apk/res/android"
     android:label="@string/app_name"
-    android:hint="@string/search_hint">
+    android:hint="@string/search_hint"
+    android:searchSuggestAuthority="com.rocketteam.dondehay.providers.PlacesSearchProvider"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestIntentData="com.rocketteam.dondehay/suggestions/#"
+    android:searchSuggestThreshold="2">
 
 </searchable>

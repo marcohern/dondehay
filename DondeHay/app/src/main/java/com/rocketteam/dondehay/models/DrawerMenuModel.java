@@ -1,9 +1,8 @@
+package com.rocketteam.dondehay.models;
+
 /**
  * Created by marcoh on 23/11/14.
  */
-package com.rocketteam.dondehay.models;
-
-
 public class DrawerMenuModel {
     private String _sDisplayName;
     private String _sCode;
